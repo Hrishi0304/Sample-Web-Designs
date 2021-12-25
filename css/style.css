@@ -168,7 +168,7 @@ html{
 }
 .burger{
     display: none;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     right: 5%;
     top: 15px;
@@ -197,7 +197,9 @@ html{
     }
     .burger{
         display: block;
-
+        flex-direction: column;
+        justify-content: space-around;
+        width: 35px;
     }
     .h-nav-resp{
         height: 70px;
