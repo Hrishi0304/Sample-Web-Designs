@@ -222,4 +222,27 @@ html{
     .paras{
         padding: 0;
     }
+    @keyframes rotate{
+        from{
+           transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .line{
+        transition: all 0.8s;
+    }
+    .change .line-1{
+        transform: rotateZ(-405deg) translate(-8px,6px);
+    }
+    .change .line-2{
+        opacity: 0;
+    }
+    .change .line-3{
+        transform: rotateZ(405deg) translate(-8px,-6px);
+    }
+    .logo img{
+        display: none;
+    }
 }
